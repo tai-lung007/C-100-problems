@@ -19,5 +19,9 @@ instead of 100 days of code , i will select simple 100 problems and solve them i
  - no need to pick 100 problems
  - just select topics and problems
  - and code
+
+## BLOG ON UPDATES 
+
+ - JUST Built the a project using makefiles for bit manipulations
  - 
  
