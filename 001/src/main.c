@@ -1,5 +1,6 @@
-#include<stdio.h>
-void print_bits_char(unsigned char ch);
+#include "print_bits.h"
+#include "bitwise_ops.h"
+#include "swap.h"
 
 int main()
 {
@@ -7,6 +8,8 @@ int main()
 	unsigned char a,b;
 	a=0x12;
 	b=0x34;
+
+
 	printf("a=%x b=%x\n",a,b);
 	printf("a=%x b=%x\n",(unsigned int)a,(unsigned int)b);
 	printf("sizeof() of a=%zu\n",sizeof(a));
@@ -24,12 +27,14 @@ int main()
 	 *
 	 */
 
-	printf("a|b = %x\n", a|b);
+	bitwise_operations(a,b);
 
-
-	b^=a;
-	a^=b;
-	b^=a;
+	/*
+	 * swap a and b
+	 *
+	 */
+	swap(&a,&b);
+	printf("after swapping :\n");
 	printf("a=%x b=%x\n",(unsigned int)a,(unsigned int)b);
 
 
@@ -42,8 +47,6 @@ int main()
 	 * each bits of a  char
 	 */
 
-
-        
 	print_bits_char(a);
 
 
@@ -52,21 +55,5 @@ int main()
 }
 
 
-
-void print_bits_char(unsigned char ch)
-{
-     int i;
-
-    printf("the bits of %x ",ch);
-     for(i=7;i>=0;i--)
-     {
-      printf("%d", (ch>>i)&1 );
-      if(i%4==0)
-	      putchar(' ');
-     
-     }
-     printf("\n");
-
-}
 
 
