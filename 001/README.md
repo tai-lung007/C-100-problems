@@ -1,4 +1,12 @@
+this is a simple project on BIT MANIPULATIONS
+
+
+
+
+
+
 project-root/
+
 
 |
 |-->
