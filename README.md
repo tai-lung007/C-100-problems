@@ -10,3 +10,14 @@ instead of 100 days of code , i will select simple 100 problems and solve them i
 -   stack
 -   queue
 -   linkedlist
+
+
+
+## tasks
+ - first prepare a list 100 problems
+ - strategy : change :
+ - no need to pick 100 problems
+ - just select topics and problems
+ - and code
+ - 
+ 
