@@ -1,0 +1,34 @@
+===================================================================
+1. program  to find whether a number is odd or even 
+
+lets take a number
+
+num = 13
+mask = 0x1
+
+lets display both these in bits
+
+
+num  & mask == 0 if its even
+
+====================================================================
+
+
+2. clear rightmost 1 bit  ... to find the pos of rightmost set bit
+
+
+
+ n & (n-1)
+
+
+display n
+display n-1
+
+display n & n-1
+display n & ~ (n-1)
+====================================================================
+3.
+
+
+
+
